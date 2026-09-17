@@ -1,0 +1,280 @@
+
+@theme {
+  --color-*: initial;
+  --text-*: initial;
+  --font-*: initial;
+
+  --color-ink: #0f172a;
+  --color-paper: #f8fafc;
+  --color-surface: #f1f5f9;
+  --color-blue: #0369a1;
+  --color-green: #047857;
+  --color-orange: #c2410c;
+  --color-yellow: #b45309;
+  --color-red: #dc2626;
+  --color-gray: #475569;
+
+  --color-blue-dark: #075985;
+  --color-blue-soft: #e0f2fe;
+  --color-blue-bright: #7dd3fc;
+  --color-green-dark: #065f46;
+  --color-green-soft: #d1fae5;
+  --color-green-bright: #34d399;
+  --color-orange-dark: #9a3412;
+  --color-orange-soft: #ffedd5;
+  --color-yellow-dark: #92400e;
+  --color-yellow-soft: #fef3c7;
+  --color-red-dark: #b91c1c;
+  --color-red-soft: #fee2e2;
+
+  --color-border: #e2e8f0;
+  --color-border-strong: #94a3b8;
+
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #ffffff;
+
+  --text-note: 0.875rem;
+  --text-note--line-height: 1.45;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5;
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.35;
+  --text-title: 1.375rem;
+  --text-title--line-height: 1.25;
+  --text-title--letter-spacing: -0.02em;
+  --text-display: 1.75rem;
+  --text-display--line-height: 1.15;
+  --text-display--letter-spacing: -0.025em;
+  --text-money: 2.5rem;
+  --text-money--line-height: 1;
+  --text-money--letter-spacing: -0.03em;
+
+  --spacing-touch: 2.75rem;
+  --spacing-touch-lg: 3rem;
+  --spacing-gutter: 1rem;
+  --spacing-bar: 5.5rem;
+  --spacing-nav: 4.75rem;
+  --spacing-screen: 22.5rem;
+
+  --radius-*: initial;
+  --radius-sm: 0.5rem;
+  --radius-card: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  --shadow-soft: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-lift:
+    0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  --shadow-bar: 0 -1px 3px rgba(15, 23, 42, 0.08);
+
+  --ease-card: cubic-bezier(0.2, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.4, 0.64, 1);
+
+  --animate-rise: rise 0.4s var(--ease-card) both;
+  --animate-pop: pop 0.3s var(--ease-bounce) both;
+  --animate-slide-up: slide-up 0.28s var(--ease-card) both;
+  --animate-slide-down: slide-down 0.18s var(--ease-card) both;
+  --animate-fade: fade 0.3s ease both;
+  --animate-shimmer: shimmer 1.6s linear infinite;
+  --animate-draw: draw 0.5s var(--ease-card) 0.1s both;
+
+  --animate-step-forward: step-forward 0.24s var(--ease-card) both;
+  --animate-step-back: step-back 0.24s var(--ease-card) both;
+
+  --animate-dialog-in: dialog-in 0.42s var(--ease-bounce) both;
+  --animate-dialog-out: dialog-out 0.18s var(--ease-card) both;
+  --animate-drawer-in: drawer-in 0.24s var(--ease-card) both;
+  --animate-drawer-out: drawer-out 0.2s var(--ease-card) both;
+  --animate-check: check-in 0.22s var(--ease-bounce) both;
+  --animate-fade-out: fade-out 0.18s ease both;
+  --animate-icon-in: icon-in 0.5s var(--ease-bounce) 0.12s both;
+  --animate-halo: halo 0.9s var(--ease-card) 0.3s both;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(0.75rem);
+    }
+    to {
+      opacity: var(--rise-to, 1);
+      transform: none;
+    }
+  }
+
+  @keyframes check-in {
+    from {
+      opacity: 0;
+      transform: scale(0.4);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes pop {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes step-forward {
+    from {
+      opacity: 0;
+      transform: translateX(0.75rem);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes step-back {
+    from {
+      opacity: 0;
+      transform: translateX(-0.75rem);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  @keyframes slide-down {
+    from {
+      transform: none;
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes dialog-in {
+    from {
+      opacity: 0;
+      transform: scale(0.7);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes drawer-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  @keyframes drawer-out {
+    from {
+      transform: none;
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes dialog-out {
+    from {
+      opacity: 1;
+      transform: none;
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.92);
+    }
+  }
+
+  @keyframes icon-in {
+    from {
+      opacity: 0;
+      transform: scale(0) rotate(-30deg);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes halo {
+    from {
+      opacity: 0.6;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 0;
+      transform: scale(1.8);
+    }
+  }
+
+  @keyframes shimmer {
+    from {
+      background-position: -150% 0;
+    }
+    to {
+      background-position: 250% 0;
+    }
+  }
+
+  @keyframes draw {
+    from {
+      stroke-dashoffset: 48;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@theme inline {
+  --color-action: var(--color-blue);
+  --color-action-pressed: var(--color-blue-dark);
+
+  --font-title: var(--font-archivo), "Archivo", system-ui, sans-serif;
+  --font-body: var(--font-public-sans), "Public Sans", system-ui, sans-serif;
+}
+
+@media (width < 400px) {
+  :root {
+    --text-note: 0.8125rem;
+    --text-lead: 1.0625rem;
+    --text-title: 1.25rem;
+    --text-display: 1.5rem;
+    --text-money: 2rem;
+    --spacing-gutter: 0.875rem;
+  }
+}
