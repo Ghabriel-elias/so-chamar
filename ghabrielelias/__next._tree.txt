@@ -1,0 +1,4 @@
+:HL["/so-chamar/_next/static/chunks/00bjd-4nl2363.css","style"]
+:HL["/so-chamar/_next/static/media/75affa71d1e2f6a7-s.p.17-aodiw50953.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/so-chamar/_next/static/media/fa0520225c6f3d07-s.p.33u8lzvd44aqk.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"d","key":"ghabrielelias","siblings":["a","cadastro","comecar","entrar","painel","privacidade","termos"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"Vg50-LgAcj5GQcuJYe5Nl"}
